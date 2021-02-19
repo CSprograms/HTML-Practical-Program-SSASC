@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <title>Array</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>Sri Sankara Arts and Science College (Autonomous), Enathur, Kanchipuram - 631 561.</h1>
+            <h2>HTML LAB</h2>
+            <h3>B.Sc(CS)., & B.C.A., ( I Year / II Semester )</h3>
+        </center>
+            
+        <h4>01. Write a script to create an array of 10 elements and display its contents.</h4>
+        
+        <script language="JavaScript">
+
+            var numbers = new Array();
+    
+            numbers[0] = "One";
+            numbers[1] = "Two";
+            numbers[2] = "Three";
+            numbers[3] = "Four";
+            numbers[4] = "Five";
+            numbers[5] = "Six";
+            numbers[6] = "Seven";
+            numbers[7] = "Eight";
+            numbers[8] = "Nine";
+            numbers[9] = "Ten";
+
+            document.writeln("<b>Output Method 1 : </b>", numbers);
+
+            document.writeln("<br\><br\>");
+
+            document.writeln("<b>Output Method 2 : </b>");
+            for (i = 0; i < numbers.length; i++)
+            {
+                    document.write("<br/>" + "numbers[" + i + "] = " + numbers[i]);
+            }
+            
+        </script>
+
+    </body>
+
+</html>
