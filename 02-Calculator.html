@@ -1,0 +1,92 @@
+<!--
+Sri Sankara Arts and Science College (Autonomous), Enathur, Kanchipuram - 631 561.
+HTML LAB
+B.Sc(CS)., & B.C.A., ( I Year / II Semester )
+
+Program : 02. Create a simple calculator using form fields. Have two fields for number entry and 
+one field for the result. Allow the user to be able to use plus, minus, multiply and divide.
+
+Prepared By : M ARAVINDHAN, Assistant Professor, Department of Computer Science,
+Sri Sankara Arts and Science College (Autonomous), Enathur, Kanchipuram - 631 561. 
+-->
+
+<html>
+
+<head>
+    <title>Practical Program 01</title>
+
+    <script language="JavaScript">
+        function compute(x)
+        {
+            var ip1 = parseInt(form1.txtInput1.value);
+            var ip2 = parseInt(form1.txtInput2.value);
+            var result;
+            
+            switch (x)
+            {
+                case '+':
+                    result = ip1 + ip2;
+                    break;
+                    
+                case '-':
+                    result = ip1 - ip2;
+                    break;
+
+                case '*':
+                    result = ip1 * ip2;
+                    break;
+                    
+                case '/':
+                    result = ip1 / ip2;
+                    break;
+            }
+                
+            if ( ! isNaN(result) )
+            {
+                form1.txtOutput.value = result;
+            }
+            else
+            {
+                form1.txtOutput.value = "NaN";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+
+    <h1>Simple Calculator</h1>
+
+    <form id="form1">
+        
+    <table border=1>
+        <tr>
+            <td>Input 1 :</td>
+            <td colspan="3"> <input id="txtInput1" type="text" width="15"/> </td>
+        </tr>
+
+        <tr>
+            <td>Input 2 : </td>
+                <td colspan="3"> <input id="txtInput2" type="text" width="20"/> </td>
+        </tr>
+
+        <tr>
+            <td>Result : </td>
+            <td colspan="3"> <input id="txtOutput" type="text" disabled /> </td>
+        </tr>
+
+        <tr align="center">
+            <td> <input id="cmdAdd" type="button" value="+" onclick="compute('+');"/> </td>
+            <td> <input id="cmdSub" type="button" value="-" onclick="compute('-');"/> </td>
+            <td> <input id="cmdMul" type="button" value="*" onclick="compute('*');"/> </td>
+            <td> <input id="cmdDiv" type="button" value="/" onclick="compute('/');"/> </td>
+        </tr>
+    </table>
+
+    </form>
+    
+    </center>    
+</body>
+
+</html>
