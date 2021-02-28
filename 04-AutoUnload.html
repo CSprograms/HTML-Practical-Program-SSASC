@@ -1,27 +1,27 @@
 <!--
-Program : 04. Create a document which opens a new window without a toolbar, address bar or a status bar
-that unloads itself after one minute.
+Program : 04. Create a document which opens a new window without a toolbar, address bar or a 
+status bar that unloads itself after one minute.
 -->
-
 <html>
-<head>
-    <title>Auto Unload</title>
-    <script>
-      function call()
-        {
-            newWindow = window.open("//www.sankaracollege.edu.in", toolbar=0, statusbar=0, locationbar=0);         
-            setTimeout(function() {wait();},20000);
-        }   
-       
-        function wait()
-        {
-            newWindow.close();
-        }
-    </script>
-        
-</head>
-    <h1>Sri Sankara Arts and Science College (Autonomous)</h1>
-    <h2>Enathur, kanchipuram - 631 561</h2>
-    <h3 id="link1" onclick="call()" >Website</h3>
-
+    <head>
+        <title>Auto Unload</title>
+        <script>
+            function onClick()
+            {
+                newWindow = window.open("https://www.tn.gov.in/", toolbar=0, statusbar=0, locationbar=0);         
+                setTimeout(function() {wait();},10000);
+            }   
+            function wait()
+            {
+                newWindow.close();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Program : 04</h1>
+        <h2>Create a document which opens a new window without a toolbar, address bar or a status bar
+            that unloads itself after one minute.</h2>
+        <h3>Use the below link to to access Tami Nadu Goverment Portal</h3>
+        <h4 id="link1" onclick="onClick()" >https://www.tn.gov.in/</h4>
+    </body>
 </html>
