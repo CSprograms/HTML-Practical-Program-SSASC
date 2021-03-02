@@ -9,9 +9,9 @@ status bar that unloads itself after one minute.
             function onClick()
             {
                 newWindow = window.open("https://www.tn.gov.in/", toolbar=0, statusbar=0, locationbar=0);         
-                setTimeout(function() {wait();},10000);
+                setTimeout(function() {autoUnload();},60000);
             }   
-            function wait()
+            function autoUnload()
             {
                 newWindow.close();
             }
